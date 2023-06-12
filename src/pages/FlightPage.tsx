@@ -17,6 +17,10 @@ function FlightPage() {
     const [email, setEmail] = useState("");
     const [error, setError] = useState(false)
 
+    const [nameErr, setNameErr] = useState("")
+    const [surnameErr, setSurnameErr] = useState("")
+    const [emailErr, setEmailErr] = useState("")
+
     let result = context?.flights.filter((obj) => {
         return obj.id === Number(id);
     });
@@ -51,7 +55,6 @@ function FlightPage() {
                 let seat = {id:id, seatId:seatReserve}
     
                 context?.setReservation([...context.reservation, seat]);
-    
     
                 setSeatReserve(0);
             }   
@@ -104,6 +107,7 @@ function FlightPage() {
                     onChange={handleName}
                     className={error? 'error':''}
                 />
+                <p>{nameErr}</p>
                 
                 <input
                     type="text"
@@ -114,6 +118,7 @@ function FlightPage() {
                     onChange={handleSurname}
                     className={error? 'error':''}
                 />
+                <p>{surnameErr}</p>
                 
                 <input
                     type="text"
@@ -124,6 +129,7 @@ function FlightPage() {
                     onChange={handleEmail}
                     className={error? 'error':''}
                 />
+                <p>{emailErr}</p>
             </div>
 
 
