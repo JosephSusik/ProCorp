@@ -1,0 +1,29 @@
+.show-flights {
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 6px;
+    background-color: var(--picton-blue-200);
+
+    align-items: center;
+
+    width: 40%;
+    padding: 8px 16px;
+
+    max-height: 40vh;
+    overflow: auto;
+
+    align-self: flex-start;
+}
+
+.flights-found {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.no-flights {
+    font-size: 18px;
+    font-weight: 500;
+}

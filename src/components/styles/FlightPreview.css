@@ -1,0 +1,59 @@
+.flight-preview {
+    border: 2px solid var(--picton-blue-600);
+    border-radius: 4px;
+    padding: 4px 8px;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    place-items: center;
+}
+
+a {
+    all: unset;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.departure-arrival {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    gap: 8px;
+}
+
+.departure-arrival .column {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.departure-arrival .column .icon {
+    transform: rotate(90deg);
+}
+
+.departure-arrival .column .airport {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.departure-arrival .column .time {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.departure-arrival .column .duration {
+    font-size: 12px;
+}
+
+.flight-preview .date {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.flight-preview .price {
+    font-size: 18px;
+    font-weight: 500;
+}

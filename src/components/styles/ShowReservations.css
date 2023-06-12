@@ -1,0 +1,13 @@
+.show-registration {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.registration {
+    display: flex;
+    gap: 4px;
+    padding: 2px 4px;
+    border: 2px solid var(--picton-blue-600);
+    border-radius: 2px;
+    background-color: white;
+}
