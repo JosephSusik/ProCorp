@@ -8,6 +8,10 @@ function ShowReservations() {
 
     return(
         <div className='show-registration'>
+            {context?.reservation.length === 0?
+                <p>No reservations yet</p>
+            :
+            <>
             {
                 context?.reservation.map((element)=> (
                     <div className='registration'>
@@ -17,6 +21,10 @@ function ShowReservations() {
                     </div>
                 ))
             }
+            </>
+            }
+
+
         </div>
     );
 }
