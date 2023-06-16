@@ -86,6 +86,7 @@ function DropDown(opt:DropDownProps) {
                                 onChange={searchOnChange}
                                 placeholder='Search...'
                                 autoComplete='off'
+                                autoFocus
                             />
                         </div>
                         {optionsToShow().map((option) => (

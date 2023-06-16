@@ -14,7 +14,7 @@ function ShowReservations() {
             <>
             {
                 context?.reservation.map((element)=> (
-                    <div className='registration'>
+                    <div className='registration' key={element.id}>
                         <p>FlightID: {element.id}</p>
                         <p>|</p>
                         <p>SeatID: {element.seatId}</p>
