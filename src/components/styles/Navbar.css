@@ -1,6 +1,5 @@
 nav {
     height: var(--nav-height);
-    border-bottom: 2px solid var(--picton-blue-600);
     display: flex;
 
     align-items: center;

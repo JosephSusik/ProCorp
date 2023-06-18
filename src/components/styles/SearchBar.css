@@ -64,3 +64,10 @@
     border-color: var(--picton-blue-500);
     background-color: var(--picton-blue-200);
 }
+
+@media screen and (max-width: 950px) {
+    .search-bar {
+        display: flex;
+        flex-direction: column;
+    }
+}

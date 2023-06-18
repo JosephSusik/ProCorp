@@ -1,0 +1,34 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    align-self: center;
+    gap: 8px;
+
+    align-items: center;
+}
+.inputs .inpt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 2px;
+}
+
+.inputs input{
+    padding: 4px 8px;
+    border: 2px solid var(--picton-blue-600);
+    border-radius: 4px;
+    width: 80%;
+}
+
+.inputs .err-msg {
+    height: 10px;
+    font-size: 10px;
+    color: red;
+}
+
+.inputs .error {
+    border: 2px solid red;
+}

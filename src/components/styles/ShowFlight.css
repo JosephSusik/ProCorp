@@ -28,3 +28,9 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 950px) {
+    .show-flights {
+        width: 60%;
+    }
+}

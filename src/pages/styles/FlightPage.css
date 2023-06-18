@@ -1,10 +1,11 @@
 .flight-page-wrapper {
-    width: 100vw;
-    height: calc(100vh - var(--nav-height) - 2px);
+    max-width: 100vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding-top: 64px;
 }
 
 .flight-page {
@@ -12,7 +13,6 @@
     flex-direction: column;
 
     width: 80%;
-    height: 80%;
 
     padding: 8px 16px;
     border: 2px solid var(--picton-blue-600);
@@ -80,6 +80,7 @@
 .flight-page .seat-err {
     display: flex;
     align-self: center;
+    color: red;
 }
 
 
@@ -87,6 +88,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
+
+    align-self: center;
 }
 
 .flight-page .number-people .counter {
@@ -98,41 +101,6 @@
 .flight-page a {
     cursor: default;
     pointer-events: none;
-}
-
-.flight-page .inputs {
-    display: flex;
-    flex-direction: column;
-
-    width: 50%;
-    align-self: center;
-    gap: 8px;
-
-    align-items: center;
-}
-.flight-page .inputs .inpt {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    gap: 2px;
-}
-
-.flight-page .inputs input{
-    padding: 4px 8px;
-    border: 2px solid var(--picton-blue-600);
-    border-radius: 4px;
-    width: 80%;
-}
-
-.flight-page .inputs .err-msg {
-    height: 10px;
-    font-size: 10px;
-    color: red;
-}
-
-.flight-page .inputs .error {
-    border: 2px solid red;
 }
 
 .flight-page button {
@@ -167,4 +135,83 @@
 .flight-page button.disable {
     cursor:not-allowed;
     background-color: gray; 
+}
+
+.inpt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 2px;
+
+    align-self: center;
+}
+
+.inpt input{
+    padding: 4px 8px;
+    border: 2px solid var(--picton-blue-600);
+    border-radius: 4px;
+    width: 80%;
+}
+
+.inpt .err-msg {
+    height: 10px;
+    font-size: 10px;
+    color: red;
+}
+
+.inpt .error {
+    border: 2px solid red;
+}
+
+.loading {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation {
+    width: 100%;
+    height: calc(100vh - 128px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+}
+
+.reservation .info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.go-back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.go-back-btn button {
+    width: 32px;
+    height: 32px;
+}
+
+.go-back-btn button:hover  {
+    cursor: pointer;
 }
