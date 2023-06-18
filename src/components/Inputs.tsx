@@ -53,6 +53,7 @@ function Inputs(props:InputsProps) {
 
     return(
         <div className='inputs'>
+            <p>Passanger {props.index+1}</p>
             <div className='inpt'>
                 <input 
                     type="text"

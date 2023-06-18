@@ -134,7 +134,8 @@
 
 .flight-page button.disable {
     cursor:not-allowed;
-    background-color: gray; 
+    background-color: lightgray;
+    border-color: grey;
 }
 
 .inpt {
